@@ -1,0 +1,11 @@
+@startuml "Reactive Streams"
+class Publisher
+class Subscriber
+class Subscription
+class Processor
+
+Publisher o-- Subscriber
+Subscriber o-- Subscription
+Publisher <-- Processor
+Subscriber <-- Processor
+@enduml
